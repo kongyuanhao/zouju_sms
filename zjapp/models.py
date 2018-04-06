@@ -16,9 +16,9 @@ class ProjectModel(models.Model):
     '''
     产品管理
 
-        产品编码
-        品牌名称
-        产品名称
+        产品编码    project_no
+        品牌名称    
+        产品名称    project_name
         图片
         订单号
         订单数量
