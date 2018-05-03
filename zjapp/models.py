@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
-
+from django.contrib.auth.models import User
 
 # Create your models here.
 # 产品管理/                                      02-Apr-2018 11:19                   -
@@ -35,6 +35,7 @@ class ProjectModel(models.Model):
         尾款日期
         总货值
     '''
+
 
 
 class SupplierModel(models.Model):
