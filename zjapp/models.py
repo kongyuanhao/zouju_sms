@@ -2,7 +2,17 @@
 from __future__ import unicode_literals
 
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractUser
+
+
+class User(AbstractUser):
+    """
+    Users within the Django authentication system are represented by this
+    model.
+
+    Username, password and email are required. Other fields are optional.
+    """
+    pass
 
 
 # Create your models here.
