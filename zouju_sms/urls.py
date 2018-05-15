@@ -1,4 +1,4 @@
-#coding:utf-8
+# coding:utf-8
 """zouju_sms URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from rest_framework.authtoken import views
 from rest_framework_swagger.views import get_swagger_view
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^zjapp/', include('zjapp.urls')),
+    url(r'^authtoken/', views.obtain_auth_token),
     url(r'^swagger_docs/', get_swagger_view(title=u'进销存'))
 ]

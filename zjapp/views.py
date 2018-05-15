@@ -6,13 +6,41 @@ from rest_framework import viewsets, routers
 
 # Create your views here.
 
+from zjapp.models import ProjectModel, PurchaseOrderModel, OrderProjectModel, DepartmentModel, CategoryModel, User
+from zjapp.serializers import ProjectModelSerializer, PurchaseOrderModelSerializer, OrderProjectModelSerializer, \
+    DepartmentModelSerializer, CategoryModelSerializer, UserSerializer
+
 router = routers.DefaultRouter()
 
+
+# 部门
+class DepartmentModelViewSet(viewsets.ModelViewSet):
+    queryset = DepartmentModel.objects.all()
+    serializer_class = DepartmentModelSerializer
+
+
+router.register('departmentmodel', DepartmentModelViewSet, base_name='departmentmodel')
+
+
+# 部门类别
+class CategoryModelViewSet(viewsets.ModelViewSet):
+    queryset = CategoryModel.objects.all()
+    serializer_class = CategoryModelSerializer
+
+
+router.register('categorymodel', CategoryModelViewSet, base_name='categorymodel')
+
+
+# 用户管理
+class UserModelViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+router.register('usermodel', UserModelViewSet, base_name='usermodel')
+
+
 # 货物
-from zjapp.models import ProjectModel, PurchaseOrderModel, OrderProjectModel
-from zjapp.serializers import ProjectModelSerializer, PurchaseOrderModelSerializer, OrderProjectModelSerializer
-
-
 class ProjectModelViewSet(viewsets.ModelViewSet):
     queryset = ProjectModel.objects.all()
     serializer_class = ProjectModelSerializer

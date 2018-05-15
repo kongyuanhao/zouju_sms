@@ -5,14 +5,19 @@ from django.db import models
 from django.contrib.auth.models import User, AbstractUser
 
 
-class User(AbstractUser):
-    """
-    Users within the Django authentication system are represented by this
-    model.
+class DepartmentModel(models.Model):
+    name = models.CharField(help_text=u"部门名称", max_length=255, null=True, blank=True)
+    mark = models.TextField(help_text=u"备注", null=True, blank=True)
 
-    Username, password and email are required. Other fields are optional.
-    """
-    pass
+
+class CategoryModel(models.Model):
+    department = models.ForeignKey(DepartmentModel, related_name="category")
+    name = models.CharField(help_text=u"类别名称", max_length=255, null=True, blank=True)
+
+
+class User(AbstractUser):
+    category = models.ForeignKey(CategoryModel, related_name="user",null=True, blank=True)
+    mark = models.TextField(help_text=u"备注", null=True, blank=True)
 
 
 # Create your models here.
