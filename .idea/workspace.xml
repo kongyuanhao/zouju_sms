@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="392ce6db-68dd-40f6-8f53-9f99d78cc7ee" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/zjapp/migrations/0002_auto_20180515_2050.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zjapp/migrations/0003_auto_20180515_2120.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zjapp/seed.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zjapp/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/zjapp/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zjapp/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/zjapp/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zjapp/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/zjapp/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zouju_sms/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/zouju_sms/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zouju_sms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/zouju_sms/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +18,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zouju_sms/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="437">
+              <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="seed.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zjapp/seed.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
@@ -113,10 +126,11 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/zjapp/urls.py" />
         <option value="$PROJECT_DIR$/zouju_sms/urls.py" />
-        <option value="$PROJECT_DIR$/zouju_sms/settings.py" />
         <option value="$PROJECT_DIR$/zjapp/serializers.py" />
         <option value="$PROJECT_DIR$/zjapp/models.py" />
         <option value="$PROJECT_DIR$/zjapp/views.py" />
+        <option value="$PROJECT_DIR$/zouju_sms/settings.py" />
+        <option value="$PROJECT_DIR$/zjapp/seed.py" />
       </list>
     </option>
   </component>
@@ -251,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526297468729</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="abc">
+      <created>1526392829961</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1526392829961</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -294,13 +315,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="abc" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/zouju_sms/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zjapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -664,13 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zjapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -722,10 +729,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zouju_sms/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="437">
+          <caret line="134" column="35" selection-start-line="134" selection-start-column="35" selection-end-line="134" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zjapp/seed.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
